@@ -58,8 +58,10 @@ File layout:
 
 9)car_driver.launch - Launch file for quick demo
 
-10)CmakeLists.txt & package.xml - Ros module files
+10)car_driver.pdf - detailed description of the algorithm
 
-11)Rviz_config.rviz - customized config file for rviz
+11)CmakeLists.txt & package.xml - Ros module files
 
-12)rviz_frame_fix - script to launch tf publisher that fixes frame for rviz
+12)Rviz_config.rviz - customized config file for rviz
+
+13)rviz_frame_fix - script to launch tf publisher that fixes frame for rviz
