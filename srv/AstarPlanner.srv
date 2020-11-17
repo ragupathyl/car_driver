@@ -1,0 +1,9 @@
+int32 mapWidth
+int32 mapHeight
+VectorPair obstacles
+VectorPair roughRoads
+Pose2D start
+Pose2D goal
+---
+Pose2D[] path
+int32[] moves

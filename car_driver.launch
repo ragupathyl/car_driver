@@ -1,0 +1,12 @@
+<launch>
+<node name="AstarPlannerServer" pkg="car_driver" type="AstarPlannerServer" output="screen"/>
+
+<node pkg="car_driver" type="rviz_frame_fix.sh" name="rviz_frame_fix"  />
+
+<node name="AstarPlannerClient" pkg="car_driver" type="AstarPlannerClient" output="screen" args="$(arg mapWidth) $(arg mapHeight) $(arg startX) $(arg startY) $(arg startD) $(arg goalX) $(arg goalY) $(arg goalD) $(arg obstacleCount) $(arg roughRoadCount)" />
+
+      
+<node name="rviz" pkg="rviz" type="rviz" args = "-d $(find car_driver)/Rviz_config.rviz" />
+
+
+</launch>
